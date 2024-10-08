@@ -470,3 +470,22 @@ window.addEventListener("oriantationchange", resizeWindow);
 // resize window end
 
 
+
+
+
+
+const navbar = document.querySelector('.header__center');
+let lastScrollTop = 0;
+const scrollThreshold = 100; // Adjust this value to change when the navbar appears
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > scrollThreshold) {
+        navbar.classList.add('sticky-nav');
+    } else {
+        navbar.classList.remove('sticky-nav');
+    }
+    
+    lastScrollTop = scrollTop;
+});

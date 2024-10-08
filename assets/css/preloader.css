@@ -62,3 +62,113 @@
     0% { transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg); }
     100% { transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg); }
 }
+
+
+
+
+
+
+/* navbar */
+.header-mob{
+    display: flex;
+    justify-content:space-around;
+}
+
+.header-logo__image{
+    width: 60px;
+    height: 60px;
+}
+
+.header-mob{
+    display: flex;
+    justify-items: start;
+    
+}
+
+
+.header__center {
+    position: fixed;
+    top: 0; /* Changed from -100px to 0 to be visible initially */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    padding: 3px; 
+}
+
+/* Class added when scrolled */
+.sticky-nav {
+    transform: translateY(-100%); /* Move up out of view first */
+    animation: slideDown 0.5s forwards; /* Animate sliding down */
+    background-color: #4532A7; /* Sky blue color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@keyframes slideDown {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.header-mob {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 3px;
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav__item {
+    margin: 0 15px;
+}
+
+.main-nav__link {
+    color: #333; /* You might want to adjust this based on your design */
+    text-decoration: none;
+}
+
+
+/* hero image for hero section */
+.first-screen__phone{
+    border-radius: 4%;
+    object-fit:cover;
+    margin-top: 2px;
+}
+
+
+
+
+
+/* download and price section   */
+
+
+.downloads-block__cols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer-section */
+
+.footer {
+    position: relative;
+    margin-top: 0;
+  }
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+  
+ 
